@@ -1,0 +1,723 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Bishop - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/Bishop.res" /d "NDEBUG" "D:\JX\swrod3\SwordOnline\Sources\MultiServer\Bishop\Bishop.rc"" 
+Creating temporary file "C:\Users\ADMIN\AppData\Local\Temp\RSP2C25.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "..\Common" /I "..\Rainbow\Interface" /I "..\Heaven\Interface" /I "..\..\..\lib" /I "..\..\..\Headers" /I "..\..\Sword3PaySys\S3AccServer" /I "..\..\s3client\login" /I "..\..\RoleDBManager" /I "..\..\Core\src" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "NO_PAYSYS" /Fp"Release/Bishop.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\Bishop\Application.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\Bishop\Bishop.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\Common\Event.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\Bishop\GamePlayer.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\Bishop\GameServer.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\Bishop\Intercessor.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\Bishop\Network.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\Bishop\PlayerCreator.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\Bishop\SmartClient.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMIN\AppData\Local\Temp\RSP2C25.tmp" 
+Creating temporary file "C:\Users\ADMIN\AppData\Local\Temp\RSP2C26.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "..\Common" /I "..\Rainbow\Interface" /I "..\Heaven\Interface" /I "..\..\..\lib" /I "..\..\..\Headers" /I "..\..\Sword3PaySys\S3AccServer" /I "..\..\s3client\login" /I "..\..\RoleDBManager" /I "..\..\Core\src" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "NO_PAYSYS" /Fp"Release/Bishop.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\Bishop\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMIN\AppData\Local\Temp\RSP2C26.tmp" 
+Creating temporary file "C:\Users\ADMIN\AppData\Local\Temp\RSP2C27.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/Bishop.pdb" /map:"Release/Bishop.map" /debug /machine:I386 /out:"Release/Bishop.exe" /ignore:4099 
+.\Release\Application.obj
+.\Release\Bishop.obj
+.\Release\Event.obj
+.\Release\GamePlayer.obj
+.\Release\GameServer.obj
+.\Release\Intercessor.obj
+.\Release\Network.obj
+.\Release\PlayerCreator.obj
+.\Release\SmartClient.obj
+.\Release\StdAfx.obj
+.\Release\Bishop.res
+..\..\..\Lib\release\common.lib
+..\..\..\Lib\release\engine.lib
+]
+Creating command line "link.exe @C:\Users\ADMIN\AppData\Local\Temp\RSP2C27.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Application.cpp
+Bishop.cpp
+Event.cpp
+GamePlayer.cpp
+GameServer.cpp
+Intercessor.cpp
+Network.cpp
+PlayerCreator.cpp
+SmartClient.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\Users\ADMIN\AppData\Local\Temp\RSP3FC0.bat" with contents
+[
+@echo off
+md ..\..\..\..\bin\client\release\
+copy release\Bishop.exe ..\..\..\..\bin\server\Bishop.exe
+copy release\Bishop.map ..\..\..\..\bin\server\Bishop.map
+copy release\Bishop.pdb ..\..\..\..\bin\server\Bishop.pdb
+]
+Creating command line "C:\Users\ADMIN\AppData\Local\Temp\RSP3FC0.bat"
+
+A subdirectory or file ..\..\..\..\bin\client\release\ already exists.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+
+
+
+<h3>Results</h3>
+Bishop.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Core - Win32 Server Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMIN\AppData\Local\Temp\RSP4128.tmp" with contents
+[
+/nologo /MT /W2 /GX /O2 /I "..\engine\src" /I "..\engine\include" /I "..\Network" /I "..\..\Headers" /D "NDEBUG" /D "_SERVER" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "CORE_EXPORTS" /FR"ServerRelease/" /Fp"ServerRelease/Core.pch" /Yu"KCore.h" /Fo"ServerRelease/" /Fd"ServerRelease/" /FD /c 
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KPartnerSkill.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KPlayerPartner.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KThiefSkill.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KMissle.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KMissleRes.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KMissleSet.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KSkillList.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KSkillManager.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KSkills.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KSkillSpecial.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\Skill.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KFaction.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KNpc.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KNpcAI.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KNpcAttribModify.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KNpcDeathCalcExp.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KNpcFindPath.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KNpcGold.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KNpcRes.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KNpcResList.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KNpcResNode.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KNpcSet.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KNpcTemplate.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KPlayer.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KPlayerChat.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KPlayerDBFuns.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KPlayerFaction.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KPlayerMenuState.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KPlayerPK.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KPlayerSet.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KPlayerTask.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KPlayerTeam.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KPlayerTong.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KPlayerTrade.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KSprControl.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KBasPropTbl.CPP"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KBuySell.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KInventory.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KItem.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KItemChangeRes.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KItemGenerator.CPP"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KItemList.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KItemSet.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KObj.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KObjSet.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KViewItem.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KCore.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KSubWorld.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KSubWorldSet.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KWeatherMgr.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KRegion.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KWorldMsg.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KMath.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KGMProcess.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KNewProtocolProcess.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KProtocol.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KProtocolProcess.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\ScriptFuns.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KScriptValueSet.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KSortScript.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\src\CoreServerShell.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\Scene\KWeather.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KMagicDesc.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KGMCommand.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KMission.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KTaskFuns.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KOption.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KMapMusic.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\KLadder.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMIN\AppData\Local\Temp\RSP4128.tmp" 
+Creating temporary file "C:\Users\ADMIN\AppData\Local\Temp\RSP4129.tmp" with contents
+[
+/nologo /MT /W2 /GX /O2 /I "..\engine\src" /I "..\engine\include" /I "..\Network" /I "..\..\Headers" /D "NDEBUG" /D "_SERVER" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "CORE_EXPORTS" /FR"ServerRelease/" /Fp"ServerRelease/Core.pch" /Yc"KCore.h" /Fo"ServerRelease/" /Fd"ServerRelease/" /FD /c 
+"D:\JX\swrod3\SwordOnline\Sources\Core\Src\stdafx.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMIN\AppData\Local\Temp\RSP4129.tmp" 
+Creating temporary file "C:\Users\ADMIN\AppData\Local\Temp\RSP412A.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib lualibdll.lib Ws2_32.lib Winmm.lib Shlwapi.lib /nologo /dll /incremental:no /pdb:"ServerRelease/CoreServer.pdb" /map:"ServerRelease/CoreServer.map" /debug /machine:I386 /out:"ServerRelease\CoreServer.dll" /implib:"ServerRelease/CoreServer.lib" /ignore:4099 
+.\ServerRelease\KPartnerSkill.obj
+.\ServerRelease\KPlayerPartner.obj
+.\ServerRelease\KThiefSkill.obj
+.\ServerRelease\KMissle.obj
+.\ServerRelease\KMissleRes.obj
+.\ServerRelease\KMissleSet.obj
+.\ServerRelease\KSkillList.obj
+.\ServerRelease\KSkillManager.obj
+.\ServerRelease\KSkills.obj
+.\ServerRelease\KSkillSpecial.obj
+.\ServerRelease\Skill.obj
+.\ServerRelease\KFaction.obj
+.\ServerRelease\KNpc.obj
+.\ServerRelease\KNpcAI.obj
+.\ServerRelease\KNpcAttribModify.obj
+.\ServerRelease\KNpcDeathCalcExp.obj
+.\ServerRelease\KNpcFindPath.obj
+.\ServerRelease\KNpcGold.obj
+.\ServerRelease\KNpcRes.obj
+.\ServerRelease\KNpcResList.obj
+.\ServerRelease\KNpcResNode.obj
+.\ServerRelease\KNpcSet.obj
+.\ServerRelease\KNpcTemplate.obj
+.\ServerRelease\KPlayer.obj
+.\ServerRelease\KPlayerChat.obj
+.\ServerRelease\KPlayerDBFuns.obj
+.\ServerRelease\KPlayerFaction.obj
+.\ServerRelease\KPlayerMenuState.obj
+.\ServerRelease\KPlayerPK.obj
+.\ServerRelease\KPlayerSet.obj
+.\ServerRelease\KPlayerTask.obj
+.\ServerRelease\KPlayerTeam.obj
+.\ServerRelease\KPlayerTong.obj
+.\ServerRelease\KPlayerTrade.obj
+.\ServerRelease\KSprControl.obj
+.\ServerRelease\KBasPropTbl.obj
+.\ServerRelease\KBuySell.obj
+.\ServerRelease\KInventory.obj
+.\ServerRelease\KItem.obj
+.\ServerRelease\KItemChangeRes.obj
+.\ServerRelease\KItemGenerator.obj
+.\ServerRelease\KItemList.obj
+.\ServerRelease\KItemSet.obj
+.\ServerRelease\KObj.obj
+.\ServerRelease\KObjSet.obj
+.\ServerRelease\KViewItem.obj
+.\ServerRelease\KCore.obj
+.\ServerRelease\KSubWorld.obj
+.\ServerRelease\KSubWorldSet.obj
+.\ServerRelease\KWeatherMgr.obj
+.\ServerRelease\KRegion.obj
+.\ServerRelease\KWorldMsg.obj
+.\ServerRelease\KMath.obj
+.\ServerRelease\KGMProcess.obj
+.\ServerRelease\KNewProtocolProcess.obj
+.\ServerRelease\KProtocol.obj
+.\ServerRelease\KProtocolProcess.obj
+.\ServerRelease\ScriptFuns.obj
+.\ServerRelease\KScriptValueSet.obj
+.\ServerRelease\KSortScript.obj
+.\ServerRelease\CoreServerShell.obj
+.\ServerRelease\KWeather.obj
+.\ServerRelease\KMagicDesc.obj
+.\ServerRelease\KGMCommand.obj
+.\ServerRelease\KMission.obj
+.\ServerRelease\KTaskFuns.obj
+.\ServerRelease\KOption.obj
+.\ServerRelease\KMapMusic.obj
+.\ServerRelease\KLadder.obj
+.\ServerRelease\stdafx.obj
+..\..\Lib\release\engine.lib
+..\..\Lib\release\common.lib
+.\Src\USBKey\EP1KDL20.LIB
+.\Src\USBKey\EpsForJoLib.lib
+]
+Creating command line "link.exe @C:\Users\ADMIN\AppData\Local\Temp\RSP412A.tmp"
+<h3>Output Window</h3>
+Compiling...
+stdafx.cpp
+Compiling...
+KPartnerSkill.cpp
+KPlayerPartner.cpp
+KThiefSkill.cpp
+KMissle.cpp
+KMissleRes.cpp
+KMissleSet.cpp
+KSkillList.cpp
+KSkillManager.cpp
+KSkills.cpp
+KSkillSpecial.cpp
+Skill.cpp
+KFaction.cpp
+KNpc.cpp
+KNpcAI.cpp
+KNpcAttribModify.cpp
+KNpcDeathCalcExp.cpp
+KNpcFindPath.cpp
+KNpcGold.cpp
+KNpcRes.cpp
+KNpcResList.cpp
+Generating Code...
+Compiling...
+KNpcResNode.cpp
+KNpcSet.cpp
+KNpcTemplate.cpp
+KPlayer.cpp
+KPlayerChat.cpp
+KPlayerDBFuns.cpp
+KPlayerFaction.cpp
+KPlayerMenuState.cpp
+KPlayerPK.cpp
+KPlayerSet.cpp
+KPlayerTask.cpp
+KPlayerTeam.cpp
+KPlayerTong.cpp
+KPlayerTrade.cpp
+KSprControl.cpp
+KBasPropTbl.CPP
+KBuySell.cpp
+KInventory.cpp
+KItem.cpp
+KItemChangeRes.cpp
+Generating Code...
+Compiling...
+KItemGenerator.CPP
+KItemList.cpp
+KItemSet.cpp
+KObj.cpp
+KObjSet.cpp
+KViewItem.cpp
+KCore.cpp
+KSubWorld.cpp
+KSubWorldSet.cpp
+KWeatherMgr.cpp
+KRegion.cpp
+KWorldMsg.cpp
+KMath.cpp
+KGMProcess.cpp
+KNewProtocolProcess.cpp
+KProtocol.cpp
+KProtocolProcess.cpp
+ScriptFuns.cpp
+KScriptValueSet.cpp
+KSortScript.cpp
+Generating Code...
+Compiling...
+CoreServerShell.cpp
+KWeather.cpp
+KMagicDesc.cpp
+KGMCommand.cpp
+KMission.cpp
+KTaskFuns.cpp
+KOption.cpp
+KMapMusic.cpp
+KLadder.cpp
+Generating Code...
+Linking...
+   Creating library ServerRelease/CoreServer.lib and object ServerRelease/CoreServer.exp
+Creating temporary file "C:\Users\ADMIN\AppData\Local\Temp\RSP5743.bat" with contents
+[
+@echo off
+md ..\..\..\bin\server\release
+md ..\..\lib\release
+copy ServerRelease\CoreServer.map ..\..\..\bin\server\Coreserver.map
+copy ServerRelease\CoreServer.pdb ..\..\..\bin\server\Coreserver.pdb
+copy ServerRelease\CoreServer.dll ..\..\..\bin\server\Coreserver.dll
+copy ServerRelease\CoreServer.lib ..\..\lib\release\CoreServer.lib
+]
+Creating command line "C:\Users\ADMIN\AppData\Local\Temp\RSP5743.bat"
+
+A subdirectory or file ..\..\..\bin\server\release already exists.
+A subdirectory or file ..\..\lib\release already exists.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+
+
+
+<h3>Results</h3>
+CoreServer.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: GameServer - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMIN\AppData\Local\Temp\RSP5929.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "..\Common\\" /I "..\Rainbow\Interface" /I "..\Heaven\Interface" /I "..\..\roledbserver" /I "..\..\..\lib\\" /I "..\..\..\Headers\\" /I "..\..\..\Sources\Engine\src" /I "..\..\..\Sources\Engine\include" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /D _WIN32_WINNT=0x0400 /FR"Release/" /Fp"Release/GameServer.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\GameServer\GameServer.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\GameServer\KSOServer.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\GameServer\KTransferUnit.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMIN\AppData\Local\Temp\RSP5929.tmp" 
+Creating temporary file "C:\Users\ADMIN\AppData\Local\Temp\RSP592A.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "..\Common\\" /I "..\Rainbow\Interface" /I "..\Heaven\Interface" /I "..\..\roledbserver" /I "..\..\..\lib\\" /I "..\..\..\Headers\\" /I "..\..\..\Sources\Engine\src" /I "..\..\..\Sources\Engine\include" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /D _WIN32_WINNT=0x0400 /FR"Release/" /Fp"Release/GameServer.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\GameServer\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMIN\AppData\Local\Temp\RSP592A.tmp" 
+Creating temporary file "C:\Users\ADMIN\AppData\Local\Temp\RSP592B.tmp" with contents
+[
+Common.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/GameServer.pdb" /map:"Release/GameServer.map" /debug /machine:I386 /out:"Release/GameServer.exe" /ignore:4099 
+.\Release\GameServer.obj
+.\Release\KSOServer.obj
+.\Release\KTransferUnit.obj
+.\Release\StdAfx.obj
+..\..\..\Lib\release\engine.lib
+..\..\..\Lib\release\CoreServer.lib
+..\..\..\Lib\release\common.lib
+]
+Creating command line "link.exe @C:\Users\ADMIN\AppData\Local\Temp\RSP592B.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+GameServer.cpp
+KSOServer.cpp
+KTransferUnit.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\Users\ADMIN\AppData\Local\Temp\RSP630F.bat" with contents
+[
+@echo off
+copy Release\GameServer.exe ..\..\..\..\bin\Server\GameServer.exe
+copy Release\GameServer.pdb ..\..\..\..\bin\Server\GameServer.pdb
+copy Release\GameServer.map ..\..\..\..\bin\Server\GameServer.map
+]
+Creating command line "C:\Users\ADMIN\AppData\Local\Temp\RSP630F.bat"
+
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+
+
+
+<h3>Results</h3>
+GameServer.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Goddess - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/Goddess.res" /d "NDEBUG" "D:\JX\swrod3\SwordOnline\Sources\MultiServer\Goddess\Goddess.rc"" 
+Creating temporary file "C:\Users\ADMIN\AppData\Local\Temp\RSP6458.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "..\Common\\" /I "..\Rainbow\Interface" /I "..\Heaven\Interface" /I "..\..\..\lib" /I "..\..\..\Headers" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/Goddess.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\Goddess\ClientNode.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\Goddess\DBBackup.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\Goddess\DBDumpLoad.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\Goddess\DBTable.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\Goddess\FilterTextLib.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\Goddess\Goddess.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\Goddess\IDBRoleServer.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\Goddess\RoleNameFilter.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMIN\AppData\Local\Temp\RSP6458.tmp" 
+Creating temporary file "C:\Users\ADMIN\AppData\Local\Temp\RSP6459.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "..\Common\\" /I "..\Rainbow\Interface" /I "..\Heaven\Interface" /I "..\..\..\lib" /I "..\..\..\Headers" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/Goddess.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\Goddess\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMIN\AppData\Local\Temp\RSP6459.tmp" 
+Creating temporary file "C:\Users\ADMIN\AppData\Local\Temp\RSP645A.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/Goddess.pdb" /map:"Release/Goddess.map" /debug /machine:I386 /out:"Release/Goddess.exe" /ignore:4099 
+.\Release\ClientNode.obj
+.\Release\DBBackup.obj
+.\Release\DBDumpLoad.obj
+.\Release\DBTable.obj
+.\Release\FilterTextLib.obj
+.\Release\Goddess.obj
+.\Release\IDBRoleServer.obj
+.\Release\RoleNameFilter.obj
+.\Release\StdAfx.obj
+.\Release\Goddess.res
+..\..\..\Lib\release\common.lib
+.\libdb41s.lib
+]
+Creating command line "link.exe @C:\Users\ADMIN\AppData\Local\Temp\RSP645A.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ClientNode.cpp
+DBBackup.cpp
+DBDumpLoad.cpp
+DBTable.cpp
+FilterTextLib.cpp
+Goddess.cpp
+IDBRoleServer.cpp
+RoleNameFilter.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\Users\ADMIN\AppData\Local\Temp\RSP6BEC.bat" with contents
+[
+@echo off
+copy release\Goddess.exe ..\..\..\..\bin\server\Goddess.exe
+copy release\Goddess.map ..\..\..\..\bin\server\Goddess.map
+copy release\Goddess.pdb ..\..\..\..\bin\server\Goddess.pdb
+]
+Creating command line "C:\Users\ADMIN\AppData\Local\Temp\RSP6BEC.bat"
+
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+
+
+
+<h3>Results</h3>
+Goddess.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: S3Relay - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/S3Relay.res" /d "NDEBUG" "D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\S3Relay.rc"" 
+Creating temporary file "C:\Users\ADMIN\AppData\Local\Temp\RSP6D36.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_WORKMODE_SINGLETHREAD" /D "_TESTING" /Fp"Release/S3Relay.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\ChannelMgr.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\ChatConnect.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\ChatServer.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\DBConnect.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\DBTable.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\DealRelay.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\DoScript.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\FriendMgr.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\GatewayCenter.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\GatewayClient.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\Global.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\HeavenLib.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\HostConnect.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\HostServer.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\KThread.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\Lock.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\LogFile.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\Memory.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\NetCenter.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\NetClient.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\NetConnect.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\NetServer.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\NetSockDupEx.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\RainbowLib.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\RelayCenter.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\RelayClient.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\RelayConnect.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\RelayServer.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\RootCenter.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\RootClient.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\S3Relay.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\SockThread.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\TongConnect.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\TongServer.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\KTongControl.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\KTongSet.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\TONGDB.CPP"
+]
+Creating command line "cl.exe @C:\Users\ADMIN\AppData\Local\Temp\RSP6D36.tmp" 
+Creating temporary file "C:\Users\ADMIN\AppData\Local\Temp\RSP6D37.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_WORKMODE_SINGLETHREAD" /D "_TESTING" /Fp"Release/S3Relay.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\JX\swrod3\SwordOnline\Sources\MultiServer\S3Relay\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMIN\AppData\Local\Temp\RSP6D37.tmp" 
+Creating temporary file "C:\Users\ADMIN\AppData\Local\Temp\RSP6D47.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib Ws2_32.lib lualibdll.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/S3Relay.pdb" /map:"Release/S3Relay.map" /debug /machine:I386 /out:"Release/S3Relay.exe" /ignore:4099 
+.\Release\ChannelMgr.obj
+.\Release\ChatConnect.obj
+.\Release\ChatServer.obj
+.\Release\DBConnect.obj
+.\Release\DBTable.obj
+.\Release\DealRelay.obj
+.\Release\DoScript.obj
+.\Release\FriendMgr.obj
+.\Release\GatewayCenter.obj
+.\Release\GatewayClient.obj
+.\Release\Global.obj
+.\Release\HeavenLib.obj
+.\Release\HostConnect.obj
+.\Release\HostServer.obj
+.\Release\KThread.obj
+.\Release\Lock.obj
+.\Release\LogFile.obj
+.\Release\Memory.obj
+.\Release\NetCenter.obj
+.\Release\NetClient.obj
+.\Release\NetConnect.obj
+.\Release\NetServer.obj
+.\Release\NetSockDupEx.obj
+.\Release\RainbowLib.obj
+.\Release\RelayCenter.obj
+.\Release\RelayClient.obj
+.\Release\RelayConnect.obj
+.\Release\RelayServer.obj
+.\Release\RootCenter.obj
+.\Release\RootClient.obj
+.\Release\S3Relay.obj
+.\Release\SockThread.obj
+.\Release\StdAfx.obj
+.\Release\TongConnect.obj
+.\Release\TongServer.obj
+.\Release\KTongControl.obj
+.\Release\KTongSet.obj
+.\Release\TONGDB.OBJ
+.\Release\S3Relay.res
+..\..\..\Lib\release\engine.lib
+.\libdb41s.lib
+]
+Creating command line "link.exe @C:\Users\ADMIN\AppData\Local\Temp\RSP6D47.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ChannelMgr.cpp
+ChatConnect.cpp
+ChatServer.cpp
+DBConnect.cpp
+DBTable.cpp
+DealRelay.cpp
+DoScript.cpp
+FriendMgr.cpp
+GatewayCenter.cpp
+GatewayClient.cpp
+Global.cpp
+HeavenLib.cpp
+HostConnect.cpp
+HostServer.cpp
+KThread.cpp
+Lock.cpp
+LogFile.cpp
+Memory.cpp
+NetCenter.cpp
+NetClient.cpp
+Generating Code...
+Compiling...
+NetConnect.cpp
+NetServer.cpp
+NetSockDupEx.cpp
+RainbowLib.cpp
+RelayCenter.cpp
+RelayClient.cpp
+RelayConnect.cpp
+RelayServer.cpp
+RootCenter.cpp
+RootClient.cpp
+S3Relay.cpp
+SockThread.cpp
+TongConnect.cpp
+TongServer.cpp
+KTongControl.cpp
+KTongSet.cpp
+TONGDB.CPP
+Generating Code...
+Linking...
+Creating temporary file "C:\Users\ADMIN\AppData\Local\Temp\RSP8A27.bat" with contents
+[
+@echo off
+copy release\S3Relay.exe ..\..\..\..\bin\server\S3Relay.exe
+copy release\S3Relay.map ..\..\..\..\bin\server\S3Relay.map
+copy release\S3Relay.pdb ..\..\..\..\bin\server\S3Relay.pdb
+]
+Creating command line "C:\Users\ADMIN\AppData\Local\Temp\RSP8A27.bat"
+
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+
+
+
+<h3>Results</h3>
+S3Relay.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Sword3PaySys - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/Sword3PaySys.res" /d "NDEBUG" "D:\JX\swrod3\SwordOnline\Sources\Sword3PaySys\S3AccServer\Sword3PaySys.rc"" 
+Creating temporary file "C:\Users\ADMIN\AppData\Local\Temp\RSP8B8F.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "..\..\..\Headers" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/Sword3PaySys.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\JX\swrod3\SwordOnline\Sources\Sword3PaySys\S3AccServer\GlobalFun.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Sword3PaySys\S3AccServer\KThread.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Sword3PaySys\S3AccServer\LogFile.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Sword3PaySys\S3AccServer\main.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Sword3PaySys\S3AccServer\S3P_MSSQLServer_Result.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Sword3PaySys\S3AccServer\S3PAccount.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Sword3PaySys\S3AccServer\S3PDB_MSSQLServer_Connection.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Sword3PaySys\S3AccServer\S3PDBConnectionPool.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Sword3PaySys\S3AccServer\S3PDBConVBC.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Sword3PaySys\S3AccServer\S3PDBSocketPool.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\Sword3PaySys\S3AccServer\S3PResultVBC.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMIN\AppData\Local\Temp\RSP8B8F.tmp" 
+Creating temporary file "C:\Users\ADMIN\AppData\Local\Temp\RSP8B90.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "..\..\..\Headers" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/Sword3PaySys.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\JX\swrod3\SwordOnline\Sources\Sword3PaySys\S3AccServer\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMIN\AppData\Local\Temp\RSP8B90.tmp" 
+Creating temporary file "C:\Users\ADMIN\AppData\Local\Temp\RSP8B91.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib Ws2_32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/Sword3PaySys.pdb" /map:"Release/Sword3PaySys.map" /debug /machine:I386 /out:"Release/Sword3PaySys.exe" /ignore:4099 
+.\Release\GlobalFun.obj
+.\Release\KThread.obj
+.\Release\LogFile.obj
+.\Release\main.obj
+.\Release\S3P_MSSQLServer_Result.obj
+.\Release\S3PAccount.obj
+.\Release\S3PDB_MSSQLServer_Connection.obj
+.\Release\S3PDBConnectionPool.obj
+.\Release\S3PDBConVBC.obj
+.\Release\S3PDBSocketPool.obj
+.\Release\S3PResultVBC.obj
+.\Release\StdAfx.obj
+.\Release\Sword3PaySys.res
+]
+Creating command line "link.exe @C:\Users\ADMIN\AppData\Local\Temp\RSP8B91.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+GlobalFun.cpp
+KThread.cpp
+LogFile.cpp
+main.cpp
+S3P_MSSQLServer_Result.cpp
+S3PAccount.cpp
+S3PDB_MSSQLServer_Connection.cpp
+S3PDBConnectionPool.cpp
+S3PDBConVBC.cpp
+S3PDBSocketPool.cpp
+S3PResultVBC.cpp
+Linking...
+Creating temporary file "C:\Users\ADMIN\AppData\Local\Temp\RSP9DC2.bat" with contents
+[
+@echo off
+copy release\Sword3PaySys.exe ..\..\..\..\bin\server\Sword3PaySys.exe
+copy release\Sword3PaySys.map ..\..\..\..\bin\server\Sword3PaySys.map
+copy release\Sword3PaySys.pdb ..\..\..\..\bin\server\Sword3PaySys.pdb
+]
+Creating command line "C:\Users\ADMIN\AppData\Local\Temp\RSP9DC2.bat"
+
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+
+
+
+<h3>Results</h3>
+Sword3PaySys.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

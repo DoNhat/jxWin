@@ -1,0 +1,62 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ExpandPackage - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMIN\AppData\Local\Temp\RSP5CEB.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "EXPANDPACKAGE_EXPORTS" /Fp"Release/ExpandPackage.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\JX\swrod3\SwordOnline\Sources\ExpandPackage2.0\BlockSource.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\ExpandPackage2.0\DataPointFromStream.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\ExpandPackage2.0\DataSource.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\ExpandPackage2.0\ExpandPackage.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\ExpandPackage2.0\Interval.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\ExpandPackage2.0\Package.cpp"
+"D:\JX\swrod3\SwordOnline\Sources\ExpandPackage2.0\PackageFileHead.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMIN\AppData\Local\Temp\RSP5CEB.tmp" 
+Creating temporary file "C:\Users\ADMIN\AppData\Local\Temp\RSP5CEC.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "EXPANDPACKAGE_EXPORTS" /Fp"Release/ExpandPackage.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\JX\swrod3\SwordOnline\Sources\ExpandPackage2.0\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMIN\AppData\Local\Temp\RSP5CEC.tmp" 
+Creating temporary file "C:\Users\ADMIN\AppData\Local\Temp\RSP5CED.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Release/ExpandPackage.pdb" /machine:I386 /def:".\ExpandPackage.def" /out:"Release/ExpandPackage.dll" /implib:"Release/ExpandPackage.lib" 
+.\Release\BlockSource.obj
+.\Release\DataPointFromStream.obj
+.\Release\DataSource.obj
+.\Release\ExpandPackage.obj
+.\Release\Interval.obj
+.\Release\Package.obj
+.\Release\PackageFileHead.obj
+.\Release\StdAfx.obj
+]
+Creating command line "link.exe @C:\Users\ADMIN\AppData\Local\Temp\RSP5CED.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+BlockSource.cpp
+DataPointFromStream.cpp
+DataSource.cpp
+D:\JX\swrod3\SwordOnline\Sources\ExpandPackage2.0\DataSource.cpp(52) : error C2440: 'return' : cannot convert from 'const class PackageCQ::BlockSource *' to 'class PackageCQ::BlockSource &'
+        A reference that is not to 'const' cannot be bound to a non-lvalue
+ExpandPackage.cpp
+Interval.cpp
+Package.cpp
+PackageFileHead.cpp
+Generating Code...
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+ExpandPackage.dll - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
